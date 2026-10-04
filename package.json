@@ -1,0 +1,39 @@
+{
+  "name": "tsc-ratchet",
+  "version": "0.1.0",
+  "description": "A git pre-push gate that blocks NEW TypeScript errors, so you can adopt it in a codebase that already has some.",
+  "type": "module",
+  "bin": {
+    "tsc-ratchet": "bin/tsc-ratchet.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "mutation": "node scripts/mutation.mjs",
+    "bench": "node examples/bench.mjs",
+    "demo": "node examples/demo.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5"
+  },
+  "keywords": [
+    "typescript",
+    "git-hook",
+    "pre-push",
+    "ratchet",
+    "tsc"
+  ],
+  "license": "MIT",
+  "author": "Gonzalo Navach",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
